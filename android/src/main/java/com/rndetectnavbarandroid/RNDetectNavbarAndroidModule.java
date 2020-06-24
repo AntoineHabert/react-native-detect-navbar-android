@@ -88,7 +88,7 @@ public class RNDetectNavbarAndroidModule extends ReactContextBaseJavaModule {
 
         hasSoftwareKeys =  (realWidth - displayWidth) > 0 || (realHeight - displayHeight) > 0;
     } else {
-        boolean hasMenuKey = ViewConfiguration.get(mContext).hasPermanentMenuKey();
+        boolean hasMenuKey = ViewConfiguration.get(this.reactContext).hasPermanentMenuKey();
         boolean hasBackKey = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_BACK);
 
         hasSoftwareKeys = !hasMenuKey && !hasBackKey;
