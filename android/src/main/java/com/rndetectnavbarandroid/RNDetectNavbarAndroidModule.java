@@ -63,12 +63,13 @@ public class RNDetectNavbarAndroidModule extends ReactContextBaseJavaModule {
   private boolean hasSoftKeys() {
     boolean hasSoftwareKeys;
 
+    /*
     Activity activity = getCurrentActivity();
 
     if (activity == null) {
         return true;
     }
-
+*/
     WindowManager window = getCurrentActivity().getWindowManager();
 
     if(window != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1){
