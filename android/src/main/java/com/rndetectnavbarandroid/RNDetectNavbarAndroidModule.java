@@ -99,7 +99,7 @@ public class RNDetectNavbarAndroidModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void hasSoftKeys(final Promise promise) {    
-    promise.resolve(hasSoftKey());
+    return hasSoftKeys();
     //promise.resolve(hasImmersive());
   }  
 /*
